@@ -25,4 +25,7 @@ public class createAccount {
     public static final By DOB_INPUT = By.cssSelector("input#dateOfBirth");
 
     public static final By CREATE_ACC_BUTTON = By.xpath("//button[@type='submit']");
+
+    public static final By ERROR_MESSAGE = By.xpath("//div[@class='chakra-alert banner-error css-1ykemat']");
+
 }

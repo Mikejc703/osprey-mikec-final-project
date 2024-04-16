@@ -35,7 +35,10 @@ public class SeleniumUtilities extends BaseSetup {
         Select selectValue = new Select(dropdown);
         selectValue.selectByValue(value);
 
-
-
+    }
+    public boolean isElementDisplayed(By locator) {
+        return getWait().until(ExpectedConditions
+                        .visibilityOfElementLocated(locator))
+                .isDisplayed();
     }
 }

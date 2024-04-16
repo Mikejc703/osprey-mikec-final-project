@@ -14,6 +14,13 @@
         | student@tekschool.us | John        | MALE     | student          | Mr.          | Cena     | MARRIED       | 07/03/1999|
       When User clicks on Create Account Button
       Then User will navigate to Sign Up Your Account page
-      Then Validate email shown is
+      Then Validate the email shown is correct
 
-
+    @CreateNewAccount_3
+    Scenario: Create Account with Existing Email and Validate Error Message
+      Given User clicks on Create Primary Account Button
+      When User fills out Create Account Form with an Existing Email through a List of Map Data Table
+        | email                 | firstName   | gender   | employmentStatus | titlePrefix  | lastName | maritalStatus | DOB       |
+        | JohnCena@tekschool.us | John        | MALE     | student          | Mr.          | Cena     | MARRIED       | 07/03/1999|
+      When User clicks on Create Account Button
+      Then Validate the error message "Account with email JohnCena@tekschool.us is exist"

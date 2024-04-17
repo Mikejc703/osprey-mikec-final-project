@@ -8,11 +8,10 @@
       <change afterPath="$PROJECT_DIR$/../Class-Osprey/Class-Osprey.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../HelloWorldGit/HelloWorldGit.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/fp/bdd/pages/createAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/fp/bdd/pages/createAccount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/fp/bdd/pages/homePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/fp/bdd/pages/homePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/fp/bdd/pages/login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/fp/bdd/pages/login.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/fp/bdd/steps/CreateAccountSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/fp/bdd/steps/CreateAccountSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/fp/bdd/utility/SeleniumUtilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/fp/bdd/utility/SeleniumUtilities.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/CreateAccount.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/CreateAccount.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/fp/bdd/steps/LoginSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/fp/bdd/steps/LoginSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Login.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,13 +37,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;money&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "money",
+    "last_opened_file_path": "C:/Users/bigmi/JavaTechSchool/osprey-fp-mikec"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

@@ -13,19 +13,17 @@ public class HookSteps extends SeleniumUtilities {
         openBrowser();
     }
 
-    //Hook Will Execute After Each Scenario
-    //no matter what happened to Scenarios
-    //@After
-    //public void closingTest(Scenario scenario) {
+    @After
+    public void closingTest(Scenario scenario) {
 
-        //if (scenario.isFailed()) {
-//TakesScreenshot screenshot = (TakesScreenshot) getDriver();
-           // byte[] capture = screenshot.getScreenshotAs(OutputType.BYTES);
+        if (scenario.isFailed()) {
+TakesScreenshot screenshot = (TakesScreenshot) getDriver();
+            byte[] capture = screenshot.getScreenshotAs(OutputType.BYTES);
 
-           // scenario.attach(capture, "image/png", "screenshot");
+            scenario.attach(capture, "image/png", "screenshot");
         }
-       // getDriver().quit();
-  //  }
+        getDriver().quit();
+    }
 
-   // }
+   }
 

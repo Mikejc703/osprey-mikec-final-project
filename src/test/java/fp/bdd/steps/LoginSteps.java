@@ -1,6 +1,7 @@
 package fp.bdd.steps;
 
 import fp.bdd.pages.createAccount;
+import fp.bdd.pages.customerServicePortal;
 import fp.bdd.pages.homePage;
 import fp.bdd.pages.login;
 import fp.bdd.utility.SeleniumUtilities;
@@ -26,15 +27,10 @@ public class LoginSteps extends SeleniumUtilities {
     }
     @Then("Validate the user navigates to the {string}")
     public void validate_navigation_to_csp(String expectedTitle) {
-        String actualTitle = getElementText(login.CUSTOMER_SERVICE_PORTAL);
+        String actualTitle = getElementText(customerServicePortal.CUSTOMER_SERVICE_PORTAL);
         Assert.assertEquals(expectedTitle, actualTitle);
     }
-    @When("User enter {string} and {string} and click on Login")
-    public void user_enter_credentials_and_click_login(String username, String password) {
-        sendTextToElement(login.USERNAME_INPUT, username);
-        sendTextToElement(login.PASSWORD_INPUT, password);
-        clickElement(login.CLICK_ON_LOGIN);
-    }
+
     @When("Login with invalid user credentials {string} and {string}")
     public void login_with_invalid_credentials(String username, String password) {
         sendTextToElement(login.USERNAME_INPUT, username);

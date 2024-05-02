@@ -2,12 +2,14 @@ package fp.bdd.utility;
 
 import fp.bdd.base.BaseSetup;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
+import java.util.List;
 
 
 public class SeleniumUtilities extends BaseSetup {
@@ -41,4 +43,8 @@ public class SeleniumUtilities extends BaseSetup {
                         .visibilityOfElementLocated(locator))
                 .isDisplayed();
     }
+    public List<WebElement> getElement(WebDriver driver, By locator) {
+        return driver.findElements(locator);
+    }
+
 }

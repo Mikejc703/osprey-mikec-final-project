@@ -74,8 +74,7 @@ public void validate_new_acc_form_title(String expectedTitle) {
 
     String actualEmail = getElementText(signUp.DISPLAYED_EMAIL);
     Assert.assertEquals(generatedRandomEmail, actualEmail);
-   // boolean isDisplayed = isElementDisplayed(signUp.DISPLAYED_EMAIL);
-   // Assert.assertTrue(isDisplayed);
+
 }
 
 @When("User fills out Create Account Form with an Existing Email through a List of Map Data Table")

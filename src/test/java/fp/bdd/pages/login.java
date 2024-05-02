@@ -7,7 +7,6 @@ public class login {
     public static final By USERNAME_INPUT = By.cssSelector("input#username");
     public static final By PASSWORD_INPUT = By.cssSelector("input#password");
     public static final By CLICK_ON_LOGIN = By.xpath("//*[text()='Sign In']");
-    public static final By CUSTOMER_SERVICE_PORTAL = By.xpath("//h2[text()='Customer Service Portal']");
     public static final By ERROR_MESSAGE = By.xpath("//div[@role='alert']");
 
 }

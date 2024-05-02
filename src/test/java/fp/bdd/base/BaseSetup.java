@@ -19,7 +19,6 @@ public class BaseSetup {
         private static WebDriver driver;
         private final Properties properties = new Properties();
 
-        //Constructor
         public BaseSetup() {
 
             try {
@@ -39,7 +38,7 @@ public class BaseSetup {
 
 
         public void openBrowser() {
-            //Read browser type from Properties file
+
             String browserType = this.properties.getProperty("insurance.browser.type");
             boolean isHeadless = Boolean.parseBoolean(
                     this.properties.getProperty("insurance.browser.headless"));
@@ -65,7 +64,7 @@ public class BaseSetup {
             }
 
             driver.manage().window().maximize();
-            //Get Url from Property File
+
             String url = this.properties.getProperty("insurance.ui.url");
             driver.get(url);
             driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));

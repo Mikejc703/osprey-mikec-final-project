@@ -2,13 +2,10 @@ package fp.bdd.steps;
 
 import fp.bdd.pages.customerServicePortal;
 import fp.bdd.utility.SeleniumUtilities;
-import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 
-import java.util.List;
-import java.util.Map;
 
 public class UserProfileSteps extends SeleniumUtilities {
 
